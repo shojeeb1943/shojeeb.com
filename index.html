@@ -300,29 +300,29 @@
       <div class="row">
         <div class="col-xxl-8 col-xl-10 m-auto">
           <ul class="nav nav-pills mb_30" id="pills-tab" role="tablist">
-            
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill"
+                type="button" role="tab" aria-controls="pills-skill" aria-selected="true">
+                SKILL
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-biography-tab" data-bs-toggle="pill" data-bs-target="#pills-biography"
+                type="button" role="tab" aria-controls="pills-biography" aria-selected="false">
                 Education
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                Biography
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
-                type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">
+              <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience"
+                aria-selected="false">
                 Experience
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                Download Cv <i class="fa-solid fa-arrow-down-to-line"></i>
+              <button class="nav-link" id="pills-cv-tab" data-bs-toggle="pill" data-bs-target="#pills-cv" type="button"
+                role="tab" aria-controls="pills-cv" aria-selected="false">
+                Download CV <i class="fa-solid fa-arrow-down-to-line"></i>
               </button>
             </li>
           </ul>
@@ -331,44 +331,71 @@
       <div class="row">
         <div class="col-12">
           <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab"
               tabindex="0">
-              <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>Creative Agency</h3>
-                    <h2>Framer Designer & Developer</h2>
-                    <h4>2019 - Present</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                    <div class="tf__team_skills_bar_single">
-                      <p>Performence</p>
+              <!-- Content for SKILL tab -->
+              <!-- <section class="tf__skills pt_115 xs_pt_75 pb_70 xs_pb_30" id="skills"> -->
+              <div class="container tf__skills pt_115 xs_pt_75 pb_70 xs_pb_30" id="skills">
+                <div class="row">
+
+                </div>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__single_skills fade_bottom" data-trigerId="skills" data-stagger=".13">
+                      <span>2023 - 2024</span>
+                      <h3>Flutter Developer</h3>
+                      <p>
+                        I specialize in creating high-performance, visually appealing mobile applications for both
+                        Android and iOS platforms.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__single_skills fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <span>2023 - 2024</span>
+                      <h3>Python Developer</h3>
+                      <p>
+                        I harness the power of one of the most versatile and widely-used programming languages to build
+                        efficient, scalable, and secure applications.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__single_skills fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <span>2021 - 2023</span>
+                      <h3>Laravel Developer</h3>
+                      <p>
+                        I leverage the power of one of the most popular PHP frameworks to build modern, secure, and
+                        scalable web applications.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__single_skills fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <span>2019 - 2021</span>
+                      <h3>WordPress Developer</h3>
+                      <p>
+                        I create visually stunning and highly functional custom websites with extensive experience in
+                        developing themes and plugins.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <p>Flutter</p>
                       <div id="bar1" class="barfiller">
                         <div class="tipWrap">
                           <span class="tip"></span>
                         </div>
-                        <span class="fill" data-percentage="80"></span>
+                        <span class="fill" data-percentage="75"></span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>Apple Technology</h3>
-                    <h2>Web Application Manager</h2>
-                    <h4>2009 - 2012</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                    <div class="tf__team_skills_bar_single">
-                      <p>Performence</p>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <p>Python</p>
                       <div id="bar2" class="barfiller">
                         <div class="tipWrap">
                           <span class="tip"></span>
@@ -377,21 +404,43 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>Softech Agency</h3>
-                    <h2>Wordpress and End Developer</h2>
-                    <h4>2014 - 2018</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                    <div class="tf__team_skills_bar_single">
-                      <p>Performence</p>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <p>Laravel</p>
                       <div id="bar3" class="barfiller">
+                        <div class="tipWrap">
+                          <span class="tip"></span>
+                        </div>
+                        <span class="fill" data-percentage="90"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <p>WordPress</p>
+                      <div id="bar4" class="barfiller">
+                        <div class="tipWrap">
+                          <span class="tip"></span>
+                        </div>
+                        <span class="fill" data-percentage="99"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <p>Server Management</p>
+                      <div id="bar5" class="barfiller">
+                        <div class="tipWrap">
+                          <span class="tip"></span>
+                        </div>
+                        <span class="fill" data-percentage="90"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+                      <p>Figma</p>
+                      <div id="bar6" class="barfiller">
                         <div class="tipWrap">
                           <span class="tip"></span>
                         </div>
@@ -400,204 +449,320 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>Kent State University</h3>
-                    <h2>Master Degree Of information Technology</h2>
-                    <h4>2005 - 2009</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                    <div class="tf__team_skills_bar_single">
-                      <p>Performence</p>
-                      <div id="bar4" class="barfiller">
-                        <div class="tipWrap">
-                          <span class="tip"></span>
-                        </div>
-                        <span class="fill" data-percentage="70"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
+              <!-- </section> -->
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+
+            <div class="tab-pane fade" id="pills-biography" role="tabpanel" aria-labelledby="pills-biography-tab"
               tabindex="0">
+              <!-- Content for Biography tab -->
               <div class="row education">
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>MBA</h3>
-                    <h2>University of Dhaka</h2>
-                    <h4>2009 - 2012</h4>
+                    <h3>B.Sc in CSE</h3>
+                    <h2>Sonargaon University</h2>
+                    <h4>2020 - 2024</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      I hold a B.Sc in Computer Science and Engineering from Sonargaon University, where I gained a
+                      strong foundation in software development and engineering principles.
                     </p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>BBA</h3>
-                    <h2>University of Dhaka</h2>
-                    <h4>2009 - 2012</h4>
+                    <h3>Game Development</h3>
+                    <h2>BASIS Institute of Technology & Management</h2>
+                    <h4>2021 - 2022</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      I completed a Game Development course at BASIS Institute of Technology & Management (BITM), where
+                      I developed skills in creating engaging and interactive gaming experiences.
                     </p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
                     <h3>HSC</h3>
-                    <h2>Govt Bangla College</h2>
-                    <h4>2009 - 2012</h4>
+                    <h2>Ideal College</h2>
+                    <h4>2019 - 2020</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      I completed my Higher Secondary Certificate (HSC) from Ideal College, where I developed a strong
+                      academic foundation that prepared me for advanced studies in Computer Science and Engineering.
                     </p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
                     <h3>SSC</h3>
-                    <h2>Govt Bangla College</h2>
-                    <h4>2009 - 2012</h4>
+                    <h2>Mollartek Udayan School & College</h2>
+                    <h4>2017 - 2019</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      I completed my Secondary School Certificate (SSC) at Mollartek Udayan School & College, where I
+                      built a solid educational foundation that set the stage for my future studies in technology and
+                      engineering
                     </p>
                   </div>
                 </div>
+                <!-- Add more biography items here -->
               </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+
+            <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab"
               tabindex="0">
+              <!-- Content for Experience tab -->
               <div class="row education">
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>MBA</h3>
-                    <h2>University of Dhaka</h2>
-                    <h4>2009 - 2012</h4>
+                    <h3>Flutter Developer</h3>
+                    <h2>SoftX Solutions</h2>
+                    <h4>2024 - 2023</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      As a Flutter Developer at SoftX Solutions, I designed and implemented cross-platform mobile
+                      applications that delivered seamless user experiences. My role involved leveraging Flutter’s
+                      framework to create high-performance apps with a single codebase for both Android and iOS
+                      platforms.
                     </p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>BBA</h3>
-                    <h2>University of Dhaka</h2>
-                    <h4>2009 - 2012</h4>
+                    <h3>Operation Manager</h3>
+                    <h2>Bytesis Ltd</h2>
+                    <h4>2024 - 2022</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      As an Operations Manager at Bytesis Ltd, I oversaw daily operations to ensure efficiency and
+                      productivity. My responsibilities included managing teams, optimizing workflows, and implementing
+                      strategic initiatives to enhance overall performance and achieve business goals.
                     </p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>HSC</h3>
-                    <h2>Govt Bangla College</h2>
-                    <h4>2009 - 2012</h4>
+                    <h3>Laravel Developer</h3>
+                    <h2>Bytesis Ltd</h2>
+                    <h4>2022 - 2021</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      As a Laravel Developer at Bytesis Ltd, I built and maintained scalable web applications using
+                      Laravel’s robust framework. My responsibilities included developing custom features, optimizing
+                      performance, and ensuring secure, efficient code for dynamic web solutions.
                     </p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                   <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>SSC</h3>
-                    <h2>Govt Bangla College</h2>
-                    <h4>2009 - 2012</h4>
+                    <h3>Technical Support</h3>
+                    <h2>DianaHost Ltd</h2>
+                    <h4>2022 - 2021</h4>
                     <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
+                      As a Technical Support specialist at DianaHost Ltd, I provided expert assistance to clients by
+                      resolving technical issues and ensuring optimal performance of hosting services. My role involved
+                      troubleshooting complex problems, Server Uptime, and maintaining high levels of customer
+                      satisfaction.
                     </p>
                   </div>
                 </div>
+                <div class="col-xl-6 col-lg-6">
+                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                    <h3>Junior WordPress Developer</h3>
+                    <h2>DianaHost Ltd</h2>
+                    <h4>2021 - 2019</h4>
+                    <p>
+                      As a Junior WordPress Developer at DianaHost Ltd, I assisted in developing and customizing
+                      WordPress websites, focusing on enhancing functionality and user experience. My work included
+                      building custom themes and plugins, as well as optimizing site performance and ensuring
+                      responsiveness.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Add more experience items here -->
               </div>
             </div>
-            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-              tabindex="0">
-              <div class="row education">
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>MBA</h3>
-                    <h2>University of Dhaka</h2>
-                    <h4>2009 - 2012</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>BBA</h3>
-                    <h2>University of Dhaka</h2>
-                    <h4>2009 - 2012</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>HSC</h3>
-                    <h2>Govt Bangla College</h2>
-                    <h4>2009 - 2012</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                  <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
-                    <h3>SSC</h3>
-                    <h2>Govt Bangla College</h2>
-                    <h4>2009 - 2012</h4>
-                    <p>
-                      Nemo enim ipsam voluptatem quia voluptas sit
-                      aspernatur aut odit aut fugit sed thisnquia
-                      consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt
-                    </p>
-                  </div>
+
+            <div class="tab-pane fade" id="pills-cv" role="tabpanel" aria-labelledby="pills-cv-tab" tabindex="0">
+              <!-- Content for Download CV tab -->
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h2>Download My CV</h2>
+                  <p>Click the button below to download my CV</p>
+                  <a href="#" class="common_btn">Download CV</a>
                 </div>
               </div>
             </div>
           </div>
+          <!-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="row education">
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>MBA</h3>
+                  <h2>University of Dhaka</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>BBA</h3>
+                  <h2>University of Dhaka</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>HSC</h3>
+                  <h2>Govt Bangla College</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>SSC</h3>
+                  <h2>Govt Bangla College</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="row education">
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>MBA</h3>
+                  <h2>University of Dhaka</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>BBA</h3>
+                  <h2>University of Dhaka</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>HSC</h3>
+                  <h2>Govt Bangla College</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>SSC</h3>
+                  <h2>Govt Bangla College</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">
+            <div class="row education">
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>MBA</h3>
+                  <h2>University of Dhaka</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>BBA</h3>
+                  <h2>University of Dhaka</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>HSC</h3>
+                  <h2>Govt Bangla College</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tf__single_skill_2 fade_bottom" data-trigerId="skills">
+                  <h3>SSC</h3>
+                  <h2>Govt Bangla College</h2>
+                  <h4>2009 - 2012</h4>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit sed thisnquia
+                    consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!--================================
@@ -668,7 +833,7 @@
   <!--================================
         SKILLS START
     =================================-->
-  <section class="tf__skills pt_115 xs_pt_75 pb_70 xs_pb_30" id="skills">
+  <!-- <section class="tf__skills pt_115 xs_pt_75 pb_70 xs_pb_30" id="skills">
     <div class="container">
       <div class="row">
         <div class="col-xl-10 col-lg-8 m-auto mb_60">
@@ -796,7 +961,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!--================================
         SKILLS END
     =================================-->
