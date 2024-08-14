@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/spacing.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </head>
 
 <body>
@@ -58,7 +60,7 @@
             <a class="nav-link text_hover_animaiton" href="#projects">Projects
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link text_hover_animaiton" href="blog_list.html">blog <i class="far fa-angle-down"></i></a>
             <ul class="droap_menu">
               <li>
@@ -66,7 +68,7 @@
               </li>
               <li><a href="blog_details.html">Blog Details</a></li>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link text_hover_animaiton" href="contact.html">contact
             </a>
@@ -978,16 +980,16 @@
             <h5 class="has-animation">My Recent Portfolio</h5>
             <h2 class="has-animation">
               Elevate your brand to new <br>
-              heights with my portfolio expertise
+              heights with my expertise
             </h2>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-xl-8 col-md-6">
-          <a href="https://youtu.be/zAJrX7wcnzo?si=ZrBER2wqPCIpqMOJ" class="tf__portfolio_item play_btn"
-            data-cursor="Watch <br> video">
-            <img src="images/portfolio/1.jpg" alt="portfolio" class="img-fluid w-100">
+          <a href="https://www.youtube.com/watch?v=zAJrX7wcnzo" class="tf__portfolio_item fancybox"
+            data-fancybox="gallery" data-type="video" data-cursor="Watch <br> video">
+            <img src="images/portfolio/talkbarta.png" alt="portfolio" class="img-fluid w-100">
             <div class="text">
               <h4>Tech News Platform</h4>
               <p>YouTube</p>
@@ -995,8 +997,9 @@
           </a>
         </div>
         <div class="col-xl-4 col-md-6">
-          <a class="tf__portfolio_item play_btn" href="https://youtu.be/myYDbugA7BE" data-cursor="Watch <br> video">
-            <img src="images/portfolio/2.jpg" alt="portfolio" class="img-fluid w-100">
+          <a href="https://www.youtube.com/watch?v=myYDbugA7BE" class="tf__portfolio_item fancybox"
+            data-fancybox="gallery" data-type="video" data-cursor="Watch <br> video">
+            <img src="images/portfolio/techsavag.png" alt="portfolio" class="img-fluid w-100">
             <div class="text">
               <h4>Website for TechSavageYTg</h4>
               <p>YouTube</p>
@@ -1004,9 +1007,9 @@
           </a>
         </div>
         <div class="col-xl-6 col-md-6">
-          <a href="https://youtu.be/BtiZJ3UEW_A"
-            class="tf__portfolio_item play_btn" data-cursor="Audio <br> sound">
-            <img src="images/portfolio/3.jpg" alt="portfolio" class="img-fluid w-100">
+          <a href="https://youtu.be/BtiZJ3UEW_A" class="tf__portfolio_item fancybox" data-fancybox="gallery"
+            data-type="video" data-cursor="Watch <br> Video">
+            <img src="images/portfolio/dianahost.png" alt="portfolio" class="img-fluid w-100">
             <div class="text">
               <h4>Website Design for Dianahost</h4>
               <p>www.dianahost.com</p>
@@ -1014,15 +1017,131 @@
           </a>
         </div>
         <div class="col-xl-6 col-md-6">
-          <a href="images/portfolio/4.jpg" class="tf__portfolio_item image_popup" data-cursor="View <br> Image">
-            <img src="images/portfolio/4.jpg" alt="portfolio" class="img-fluid w-100">
+          <a href="#" class="tf__portfolio_item fancybox" data-fancybox data-src="#upwork-modal"
+            data-cursor="View <br> Profile">
+            <img src="images/portfolio/metrick.png" alt="portfolio" class="img-fluid w-100">
             <div class="text">
               <h4>Whmcs Home Page Customisation</h4>
               <p>UpWork</p>
             </div>
           </a>
+
+          <!-- Hidden modal content -->
+          <div id="upwork-modal" style="display:none;">
+            <h2>My Upwork Profile</h2>
+            <p>Unfortunately, Upwork doesn't allow direct embedding of profiles. You can visit my profile using the link
+              below:</p>
+            <a href="https://www.upwork.com/freelancers/~01fd620c250dcae541" target="_blank" rel="noopener noreferrer"
+              class="common_btn">View My Upwork Profile</a>
+            <p>Or, here's a brief summary of my work:</p>
+            <ul>
+              <li><p>Specialization: WHMCS Customization</p></li>
+              <li><p>Years of Experience: 3 Year</p></li>
+              <li><p>Projects Completed: 2K+</p></li>
+              <li><p>Client Satisfaction Rate: 100%</p></li>
+            </ul>
+          </div>
+
         </div>
       </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          Fancybox.bind("[data-fancybox]", {
+            // Animation duration in ms
+            animationDuration: 366,
+
+            // Change the default template for the slideshow
+            template: {
+              slideshow:
+                '<div class="fancybox__controls">' +
+                '<button class="fancybox__button--prev" data-fancybox-prev title="Previous">Previous</button>' +
+                '<button class="fancybox__button--next" data-fancybox-next title="Next">Next</button>' +
+                "</div>",
+            },
+
+            // Disable drag to close
+            dragToClose: false,
+
+            // Customize options for different content types
+            Image: {
+              zoom: true,
+            },
+
+            Video: {
+              ratio: 16 / 9,
+              autoStart: false,
+            },
+
+            Iframe: {
+              preload: false,
+            },
+
+            // Handle HTML content (for Upwork modal)
+            Html: {
+              vimeo: {
+                ratio: 16 / 9
+              }
+            },
+
+            // Customize caption
+            caption: function (fancybox, carousel, slide) {
+              return (
+                `${slide.index + 1} / ${carousel.slides.length} <br />` + (slide.caption || '')
+              );
+            },
+
+            // Customize toolbar
+            Toolbar: {
+              display: [
+                { id: "prev", position: "center" },
+                { id: "counter", position: "center" },
+                { id: "next", position: "center" },
+                "zoom",
+                "slideshow",
+                "fullscreen",
+                "download",
+                "thumbs",
+                "close",
+              ],
+            },
+
+            // Open/close animation
+            showClass: "fancybox-zoomIn",
+            hideClass: "fancybox-zoomOut",
+
+            // Customize wheel options
+            wheel: {
+              type: "slide",
+              releaseDelay: 100,
+            },
+
+            // Event handlers
+            on: {
+              init: (fancybox) => {
+                console.log("Fancybox initialized");
+              },
+              "reveal": (fancybox, slide) => {
+                if (slide.type === 'html') {
+                  // Custom behavior for HTML content (like Upwork modal)
+                  console.log("HTML content revealed");
+                }
+              }
+            }
+          });
+
+          // Custom click handler for Upwork link
+          document.querySelector('a[href*="upwork.com"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            Fancybox.show([
+              {
+                src: "#upwork-modal",
+                type: "inline",
+              },
+            ]);
+          });
+        });
+      </script>
     </div>
   </section>
   <!--================================
@@ -1140,7 +1259,7 @@
   <!--================================
         BLOG START
     =================================-->
-  <section class="tf__blog pt_125 xs_pt_75 pb_40 xs_pb_0" id="blogs">
+  <!-- <section class="tf__blog pt_125 xs_pt_75 pb_40 xs_pb_0" id="blogs">
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-lg-9 mb_30">
@@ -1215,7 +1334,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!--================================
         BLOG END
     =================================-->
